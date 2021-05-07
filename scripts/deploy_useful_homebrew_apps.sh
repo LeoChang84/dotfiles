@@ -11,5 +11,5 @@ brew_install 'watch'
 brew_install 'macvim'
 
 print 'Homebrew Tap Fonts'
-run_cmd 'brew tap caskroom/fonts'
+run_cmd 'brew tap homebrew/cask-fonts'
 cask_install 'font-hack-nerd-font'
