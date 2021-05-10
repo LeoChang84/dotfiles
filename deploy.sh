@@ -13,19 +13,16 @@ if [ "$1" == "macos" ]; then
   bash ./deploy_vim_macos.sh
   bash ./deploy_zsh_macos.sh
   bash ./deploy_tmux_macos.sh
-  bash ./deploy_vifm.sh
+  bash ./deploy_vifm.sh 
   bash ./deploy_minimal_homebrew_cask_apps.sh
-  bash ./deploy_fonts.sh
   zsh
-if [ "$1" == "linux" ]; then
+elif [ "$1" == "linux" ]; then
   bash ./install_homebrew_linux.sh
   bash ./deploy_useful_homebrew_linux.sh
   bash ./deploy_vim_linux.sh
   bash ./deploy_zsh_linux.sh
   bash ./deploy_tmux_linux.sh
   bash ./deploy_vifm.sh
-  bash ./deploy_minimal_homebrew_cask_apps.sh
-  bash ./deploy_fonts.sh
   zsh
 elif [ "$1" == "cask" ]; then
   bash ./deploy_homebrew_cask_apps.sh
